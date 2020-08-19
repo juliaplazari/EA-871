@@ -17,6 +17,8 @@ https://www.microchip.com/webdoc/simulator/simulator.wb_Simulator2_Stimuli.html
 Procedimento de configuração do Atmel Studio para carregar programas no Arduino
 https://medium.com/jungletronics/how-to-load-programs-to-an-arduino-uno-from-atmel-studio-7-83c8dd8d175d
 
+Tinkercad (pode ser usado para simular o circuito digitalmente): https://www.tinkercad.com/
+
 ## Resumo objetivos labs
 
 ### Lab 01: bit counter
@@ -24,8 +26,9 @@ https://medium.com/jungletronics/how-to-load-programs-to-an-arduino-uno-from-atm
 
 ### Lab 02: buffer circular
 **Objetivo:** implementar um buffer circular com tamanho 5 
-O buffer circular é uma estrutura de dados que é usada para manejar filas de dados que são recebidos de algum lugar no seu programa.
-O buffer circular pode ser pensado como se o vetor de dados estivesse posicionado sobre um círculo
+
+O buffer circular é uma estrutura de dados que é usada para manejar filas de dados que são recebidos de algum lugar no seu programa e 
+pode ser pensado como se o vetor de dados estivesse posicionado sobre um círculo
 
 ### Lab 03: GPIO
 **Objetivo:** desenvolver um programa que faça com que o microcontrolador ATMega328P conte quantas vezes um botão táctil (push-button) foi pressionado, 
@@ -37,23 +40,28 @@ Escrever um programa em Assembly que faça com que um LED pisque com um período
 
 ### Lab 05: Interrupções
 **Objetivo:** desenvolver um programa que controle um LED RGB, sendo sensível a comandos externos dados por dois botões.
+
 O estado do LED RGB será alterado de maneira periódica pelo microcontrolador, passando por uma sequência pré-definida de estados. 
-Um botão terá efeito sobre a velocidade de transição entre os estados (a cada vez que for pressionado, o tempo que o LED permanece aceso deve ser reduzido pela metade até um valor mínimo).
-Outro botão controlará o sentido da transição de cores.
+
+Um botão terá efeito sobre a velocidade de transição entre os estados (a cada vez que for pressionado, o tempo que o LED permanece aceso deve ser reduzido pela metade até um valor mínimo). O outro botão controlará o sentido da transição de cores.
 
 ### Lab 06: USART
-**Objetivo:** desenvolver um programa que utilize a USART para transmitir indefinidamente uma sequÊncia de caracteres pré-definida ao computador.
+**Objetivo:** desenvolver um programa que utilize a USART para transmitir indefinidamente uma sequência de caracteres pré-definida ao computador.
+
 Cada vez que a sequência inteira de caracteres for transmitida, o programa deve exibir uma mensagem de confirmação: " Mensagem transmitida com sucesso! ". 
 Um atraso de 5 s deve ser introduzido entre as transmissões.
 
 ### Lab 07: Transmissão e recepção serial com interrupções
 **Objetivo:** desenvolver um programa que utilize o receptor da UART para criar um sistema de acionamento de um LED RGB a paritr de comandos do teclado.
-Também utilizar o trasnmissor da UART para encaminhar mensagens de confirmação e status.
+
+Também utilizar o transmissor da UART para encaminhar mensagens de confirmação e status.
+
 A rotina associada à recepção utiliza um buffer circular.
 
 ### Lab 08: Temporizadores
 **Objetivo:** desenvolver um programa que faça com que dois LEDs pisquem em diferentes frequências, 
 ao mesmo tempo em que uma mensagem de texto é continuamente transmitida pela UART.
+
 A solução utiliza a interrupção do timer 2 associada ao modo Clear Timer on Compare Match (CTC).
 
 ### Lab 09: PWM
@@ -62,7 +70,9 @@ A solução utiliza a interrupção do timer 2 associada ao modo Clear Timer on 
 ### Lab 10: gerador de ondas
 **Objetivo:** desenvolver um programa que gere um sinal PWM cuja largura de pulso em cada período represente o valor de uma amostra de uma forma de onda analógica, 
 a qual pode ser reconstruída por meio de uma filtragem do tipo passa-baixas.
+
 Ondas: senoidal, triangular, dente-de-serra, onda AM
+
 O LED incorporado deve ser acionado para indicar qual forma de onda selecionada
 
 
